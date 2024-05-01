@@ -90,7 +90,7 @@ const setupSession = (sessionId) => {
 
     const clientOptions = {
       puppeteer: {
-        executablePath: process.env.CHROME_BIN || null,
+        executablePath: process.env.CHROME_BIN || '/usr/bin/google-chrome',
         // headless: false,
         args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu', '--disable-dev-shm-usage']
       },
